@@ -18,7 +18,7 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org
 
-      - name: Install third party libs
+      - name: Install nodejs and npm
         run: npm install
 
       - name: Build library
