@@ -76,7 +76,7 @@ const getMemoizeConnection = (hubUrl: string, config: ISignalRConfig) => {
  *
  * @returns A function that accepts an actionsFactory and dependencies, and returns the SignalR connection.
  */
-export const signalRFactory =
+export const signalrFactory =
   (config: ISignalRConfig, hubEndpoint: string): UseSocket<HubConnection> =>
   (actionsFactory: () => IActions[] | IActions, deps: DependencyList) => {
     const functions = actionsFactory();
