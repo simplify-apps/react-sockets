@@ -10,15 +10,11 @@
   </a>
 
   <a href="https://www.npmjs.com/package/@simplify-apps/react-sockets">
-    <img src="https://badgen.net/npm/dw/@simplify-apps/react-socketsp" />
+    <img src="https://img.shields.io/npm/dm/@simplify-apps/react-sockets" />
   </a>
 
   <a href="https://github.com/simplify-apps/react-sockets/blob/master/LICENSE">
     <img src="https://badgen.now.sh/badge/license/MIT" />
-  </a>
-  
-  <a href="https://bundlephobia.com/result?p=simplify-redux-app">
-    <img src="https://badgen.net/bundlephobia/minzip/simplify-redux-app">
   </a>
 </p>
 
