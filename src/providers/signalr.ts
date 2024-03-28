@@ -69,6 +69,31 @@ const getMemoizeConnection = (hubUrl: string, config: ISignalRConfig) => {
 };
 
 /**
+ * Closes all SignalR connections.
+ *
+ * @returns {Promise<void>} A promise that resolves when all connections are closed.
+ */
+export const closeAllSingnalrConnections = async () => {
+  for (const connection of connections) {
+    await connection.stop();
+  }
+
+  connections.length = 0;
+};
+
+/**
+ * Restarts all SignalR connections.
+ *
+ * @returns {Promise<void>} A promise that resolves when all connections have been restarted.
+ */
+export const restartAllSingalrConnections = async () => {
+  for (const connection of connections) {
+    await connection.stop();
+    await connection.start();
+  }
+};
+
+/**
  * Factory function that creates a SignalR socket connection and returns it.
  *
  * @param config - The SignalR configuration object.

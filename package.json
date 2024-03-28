@@ -1,6 +1,6 @@
 {
   "name": "@simplify-apps/react-sockets",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "Library for simplify ",
   "homepage": "https://github.com/simplify-apps/react-sockets#readme",
@@ -16,7 +16,7 @@
     "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
     "test": "jest",
     "type-check": "tsc --noEmit",
-    "prettier": "prettier --trailing-comma es5 --single-quote --write './{src,tests,example}/**/*.{ts,js,tsx}'"
+    "prettier": "prettier es5 --single-quote --write './{src,tests,example}/**/*.{ts,js,tsx}'"
   },
   "files": [
     "build"
